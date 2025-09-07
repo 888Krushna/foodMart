@@ -1,5 +1,8 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
-# Netlify will auto-detect Next.js and use its runtime
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
